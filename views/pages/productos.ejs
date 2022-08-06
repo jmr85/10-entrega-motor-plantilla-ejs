@@ -25,12 +25,12 @@
                         <tbody>  
                             <% products.forEach(function(product) { %>
                                 <tr>
-                                    <td><%= product.name %></td>
+                                    <td><%= product.title %></td>
                                     <td>$<%= product.price %></td>
-                                    <% if(product.photo.includes(".png") || product.photo.includes(".jpg") || product.photo.includes(".gif")){ %>
-                                        <td><img src="<%= product.photo %>" width="50em" height="50em"/></td>
+                                    <% if(product.thumbnail.includes(".png") || product.thumbnail.includes(".jpg") || product.thumbnail.includes(".gif") || product.thumbnail.includes(".webp")){ %>
+                                        <td><img src="<%= product.thumbnail %>" width="50em" height="50em"/></td>
                                     <% } else{ %>
-                                        <td>Picture</td>
+                                        <td><%= product.thumbnail %></td>
                                     <% } %>
                                 </tr>
                             <% }); %>                        
