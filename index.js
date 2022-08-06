@@ -14,7 +14,7 @@ app.get('/', function (req, res) {
 });
 
 app.post('/productos',(req, res) => {
-    const obj  = req.body;//name, price
+    const obj  = req.body;//name, price, photo
     console.log("productos: ", obj);
     products.push(obj);
     res.redirect('/');

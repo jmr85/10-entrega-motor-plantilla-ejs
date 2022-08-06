@@ -1,7 +1,17 @@
 <section>
-   <form action="/productos" method="post">
-        <input type="text" name="name" id="name" placeholder="name">
-        <input type="number" name="price" id="price" placeholder="price">
-        <input type="submit" value="Enviar">
-    </form>
+    <form action="/productos" method="post">
+        <div class="mb-3">
+          <label for="inputName" class="form-label"><strong>Nombre</strong></label>
+          <input type="text" class="form-control" id="inputName" name="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="inputPrice" class="form-label"><strong>Precio</strong></label>
+          <input type="number" name="price" class="form-control" id="inputPrice" required>
+        </div>
+        <div class="mb-3">
+            <label for="inputFoto" class="form-label"><strong>Foto URL</strong></label>
+            <input type="text" name="photo" class="form-control" id="inputFoto" required>
+          </div>
+        <button type="submit" class="btn btn-success btn-lg">Enviar</button>
+      </form>
 </section>
